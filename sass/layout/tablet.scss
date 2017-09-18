@@ -1,9 +1,19 @@
+@import "../../neat/_neat";
+
 @media screen and (min-width: 320px) and (max-width: 600px) {
+    nav {
+    	display: none;
+    }
     .logo-container {
-        line-height: $header-height;
-        width: auto;
-        img {
-            vertical-align: middle;
-        }
+        float: left;
+        width: 100px;
+    }
+    .menu {
+        float: right;
+		width: auto;
+		margin-right: 20px;
+		img {
+			max-width: 40px;
+		}
     }
 }

@@ -1,4 +1,29 @@
-@media screen
-	and (min-width: 600px) {
+@import "../../bourbon/_bourbon";
 
+@media screen and (min-width: 600px) {
+    .logo-container {
+        width: 100px;
+        float: left;
+    }
+    .menu {
+        float: left;
+        img {
+            display: none;
+        }
+        ul {
+            @include clearfix;
+        }
+        li {
+            float: left;
+            display: inline;
+            margin-left: 20px;
+            vertical-align: middle;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            line-height: normal;
+            vertical-align: sub;
+        }
+    }
 }
