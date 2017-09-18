@@ -1,4 +1,6 @@
 @import "../../bourbon/_bourbon";
+@import "../variables";
+
 
 @media screen and (min-width: 600px) {
     .logo-container {
@@ -26,4 +28,53 @@
             vertical-align: sub;
         }
     }
+}
+
+@media screen and (min-width: 900px) {
+	.twit-text,.share-sign {
+		display: none;
+	}
+	.twit-container {
+		display: block;
+		float: right;
+		margin-right: 20px;
+		line-height: $header-height;
+		img {
+			max-width: 30px;
+			vertical-align: middle;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.twit-container {
+		line-height: 3/5*$header-height;
+		position: relative;
+		top: 2/5*$header-height;
+		margin-right: 70px;
+	}
+	.twit-label {
+		display: inline-block;
+		float: left;
+		background-color: #464646;
+		padding-left: 1/8*$header-height;
+		padding-right: 1/8*$header-height;
+	}
+	.twit-text {
+		display: inline-block;
+		color: #0e8abc;
+		text-transform: capitalize;
+		margin-left: 5px;
+	}
+	.share-sign {
+		display: block;
+		float: left;
+		width: 3/5*$header-height;
+		height: 3/5*$header-height;
+		background-color: #E34E33;
+		img {
+			width: 20px;
+			margin-left: 8px;
+		}
+	}
 }
