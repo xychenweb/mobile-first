@@ -43,7 +43,6 @@
     display: block; }
 
 header {
-  margin-bottom: 10px;
   background-color: #000;
   opacity: 0.75; }
   header::after {
@@ -57,7 +56,6 @@ header {
   margin-left: 20px;
   height: 100%;
   text-align: center;
-  margin-top: 3%;
   margin-left: 20px; }
 
 .twit-container {
