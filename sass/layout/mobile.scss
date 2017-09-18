@@ -1,0 +1,142 @@
+@import "../../bourbon/_bourbon";
+@import "../../neat/_neat";
+
+
+
+@media screen and (max-width: 320px) {
+    nav {
+        display: none;
+    }
+    .hero-content {
+        display: none;
+    }
+}
+
+$custom-mobile-grid: ( columns: 6,
+media: 750px,
+gutter: 5px,
+direction: ltr,
+);
+
+
+
+.page-container {
+    @include grid-container;
+    @include grid-column(6, $custom-mobile-grid);
+    @include grid-collapse;
+
+    height: auto;
+}
+
+header {
+    @include grid-container;
+    margin-bottom: 10px;
+    background-color: #000;
+    opacity: 0.75;
+}
+
+.logo-container {
+    @include grid-column(2 of 6);
+    height: 100%;
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 20px;
+}
+
+.twit-container {
+    @include grid-column(1 of 6);
+    @include grid-push(2 of 6);
+    height: 100%;
+}
+
+.menu {
+    @include grid-column(1 of 6);
+    height: 100%;
+}
+
+.hero-container {
+    min-height: 40%;
+    overflow: hidden;
+    background-image: url("../assets/hero1.png");
+    background-size: cover;
+    position: relative;
+}
+
+.hero img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.hero-text {
+    position: absolute;
+    width: 45%;
+    height: 60%;
+    bottom: 0;
+    right: 0;
+    .hero-title {
+        display: inline-block;
+        text-align: right;
+        padding-right: 15px;
+    }
+    .highlight {
+        display: inherit;
+        text-align: right;
+        padding-right: 15px;
+    }
+}
+
+
+
+
+main {
+    background-color: #1D1D1D;
+}
+
+h2 {
+    color: #9F9F9F;
+    text-transform: capitalize;
+}
+
+main section {
+    // @include grid-column(1 of 2);
+}
+
+main {
+    height: auto;
+    padding: 10px;
+    h2 {
+        margin: 0 0 0 20px;
+    }
+}
+
+section.featured-work {
+    @include grid-container;
+    @include clearfix;
+    article {
+        @include grid-column(1 of 2);
+    }
+    article:last-child {
+    	display: none;
+    }
+
+    .sub-title {
+        display: block;
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+section.wire {
+    min-height: 100%;
+    margin-left: 20px;
+    h2 { margin-left: 0;}
+}
+
+article {
+    margin-bottom: 10px;
+}
+
+.content-container {
+    height: 100%;
+    @include clearfix;
+}

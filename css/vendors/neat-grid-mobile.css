@@ -1,0 +1,24 @@
+.custom-mobile-grid::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.custom-mobile-grid__single {
+  width: calc(16.66667% - 5.83333px);
+  float: left;
+  margin-left: 5px; }
+
+.custom-mobile-grid__double {
+  width: calc(33.33333% - 6.66667px);
+  float: left;
+  margin-left: 5px; }
+
+.custom-mobile-grid__half {
+  width: calc(50% - 7.5px);
+  float: left;
+  margin-left: 5px; }
+
+.custom-mobile-grid__full {
+  width: calc(100% - 10px);
+  float: left;
+  margin-left: 5px; }

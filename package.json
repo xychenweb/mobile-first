@@ -1,0 +1,22 @@
+{
+  "name": "responsive-design",
+  "version": "1.0.0",
+  "description": "responsive-design",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nickChen",
+    "responsive"
+  ],
+  "author": "Nick Chen",
+  "license": "ISC",
+  "dependencies": {
+    "bourbon": "^4.3.4",
+    "neat": "^1.2.2"
+  },
+  "devDependencies": {
+    "gulp-connect": "^5.0.0"
+  }
+}
