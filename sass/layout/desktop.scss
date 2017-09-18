@@ -3,6 +3,12 @@
 
 
 @media screen and (min-width: 600px) {
+    .hero-container {
+    	min-height: 400px;
+    }
+    .hero-text {
+    	display: none;
+    }
     .logo-container {
         width: 100px;
         float: left;
@@ -28,9 +34,40 @@
             vertical-align: sub;
         }
     }
+    .hero-container {
+    	background-image: url("../../assets/heroMedium.jpg");
+    	background-repeat:no-repeat;
+    }
+    .branding {
+    	display: block;
+    	margin-left: 20px; //align with gutter of neat
+    	margin-bottom: 20px;
+    	font-size: 22px;
+    	font-weight: 800;
+    	max-width: 900px;
+		.branding-content {
+			color: $brand-text;
+			display: inline;
+		}
+    }
+    hr {
+    	display: block;
+		margin: 0 20px 20px 20px;
+    	border-color: $diviver-color;
+    	border-width: 2px;
+    }
 }
 
+@media screen and (min-width: 768px) {
+
+}
+
+
+
 @media screen and (min-width: 900px) {
+	.hero-text {
+		display: none;
+	}
 	.twit-text,.share-sign {
 		display: none;
 	}
@@ -47,6 +84,17 @@
 }
 
 @media screen and (min-width: 1024px) {
+	// .hero-container {
+	// 	background-image: url("../../assets/heroWide.jpg");
+	// 	background-repeat:no-repeat;
+	// }
+	.hero-container {
+		min-height: 500px;
+		background-size: cover;
+		background-image: url("../../assets/heroWide.jpg");
+		background-repeat:no-repeat;
+		background-position: center;
+	}
 	.twit-container {
 		line-height: 3/5*$header-height;
 		position: relative;
