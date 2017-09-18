@@ -1,56 +1,32 @@
 @import "../../bourbon/_bourbon";
 @import "../../neat/_neat";
 
+// .page-container {
+//     @include grid-container;
+//     @include grid-column(6, $custom-mobile-grid);
+//     @include grid-collapse;
+//     height: auto;
+// }
 
+// header {
+//     @include grid-container;
+// }
 
-@media screen and (max-width: 320px) {
-    nav {
-        display: none;
-    }
-    .hero-content {
-        display: none;
-    }
-}
+// .logo-container {
+//     @include grid-column(2 of 6);
+//     margin-left: 20px;
+// }
 
-$custom-mobile-grid: ( columns: 6,
-media: 750px,
-gutter: 5px,
-direction: ltr,
-);
+// .twit-container {
+//     @include grid-column(1 of 6);
+//     // @include grid-push(2 of 6);
+//     height: 100%;
+// }
 
-
-
-.page-container {
-    @include grid-container;
-    @include grid-column(6, $custom-mobile-grid);
-    @include grid-collapse;
-
-    height: auto;
-}
-
-header {
-    @include grid-container;
-    background-color: #000;
-    opacity: 0.75;
-}
-
-.logo-container {
-    @include grid-column(2 of 6);
-    height: 100%;
-    text-align: center;
-    margin-left: 20px;
-}
-
-.twit-container {
-    @include grid-column(1 of 6);
-    @include grid-push(2 of 6);
-    height: 100%;
-}
-
-.menu {
-    @include grid-column(1 of 6);
-    height: 100%;
-}
+// .menu {
+//     @include grid-column(1 of 6);
+//     height: 100%;
+// }
 
 .hero-container {
     min-height: 40%;
@@ -82,9 +58,6 @@ header {
         padding-right: 15px;
     }
 }
-
-
-
 
 main {
     background-color: #1D1D1D;
@@ -137,4 +110,24 @@ article {
 .content-container {
     height: 100%;
     @include clearfix;
+}
+
+@media screen and (max-width: 320px) {
+    header {
+		height: 40px;
+		@include grid-container;
+    }
+    .logo-container {
+        @include grid-column(2 of 6);
+        line-height: 40px;
+        img { vertical-align: middle;}
+    }
+    nav,.twit-container {
+        display: none;
+    }
+    .menu {
+    }
+    .hero-content {
+        display: none;
+    }
 }

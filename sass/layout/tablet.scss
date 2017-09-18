@@ -1,0 +1,9 @@
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .logo-container {
+        line-height: $header-height;
+        width: auto;
+        img {
+            vertical-align: middle;
+        }
+    }
+}

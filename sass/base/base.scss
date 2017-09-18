@@ -1,12 +1,40 @@
-html * {
+$header-height: 60px;
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+body {
 	font-family: sans-serif;
 }
+
+header {
+	background-color: #000;
+	opacity: 0.75;
+	height: $header-height;
+}
+
+.logo-container {
+	line-height: $header-height;
+	height: 100%;
+	width: 100%;
+	margin-left: 20px;
+	img {
+		vertical-align: middle;
+		max-width: 100px;
+	}
+}
+/*----------------------------------divider--------------------------------*/
 .logo img {
 	max-width: 100%;
 	max-height: 100%;
 	display: block;
 	margin: 0 auto;
 }
+
 .menu img {
 	max-width: 100%;
 	max-height: 100%;
