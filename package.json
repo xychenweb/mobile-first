@@ -17,6 +17,7 @@
     "neat": "^1.2.2"
   },
   "devDependencies": {
-    "gulp-connect": "^5.0.0"
+    "gulp-connect": "^5.0.0",
+    "gulp-livereload": "^3.8.1"
   }
 }
