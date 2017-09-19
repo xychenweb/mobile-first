@@ -1,7 +1,6 @@
 @import "../bourbon/_bourbon";
 @import "../neat/_neat";
 @import "variables";
-@import "themes/base_theme_vars";
 @import "vendors/neat-grid-mobile";
 
 @import "base/base";
@@ -10,9 +9,3 @@
 @import "layout/mobile";
 @import "layout/tablet";
 @import "layout/desktop";
-
-@import "layout/responsiveness";
-
-
-@import "themes/base_theme_vars";
-

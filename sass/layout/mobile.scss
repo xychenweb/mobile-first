@@ -1,28 +1,6 @@
 @import "../../bourbon/_bourbon";
 @import "../../neat/_neat";
 
-// .page-container {
-//     @include grid-container;
-//     @include grid-column(6, $custom-mobile-grid);
-//     @include grid-collapse;
-//     height: auto;
-// }
-// header {
-//     @include grid-container;
-// }
-// .logo-container {
-//     @include grid-column(2 of 6);
-//     margin-left: 20px;
-// }
-// .twit-container {
-//     @include grid-column(1 of 6);
-//     // @include grid-push(2 of 6);
-//     height: 100%;
-// }
-// .menu {
-//     @include grid-column(1 of 6);
-//     height: 100%;
-// }
 .hero-container {
     min-height: 40%;
     overflow: hidden;
@@ -61,10 +39,6 @@ main {
 h2 {
     color: #9F9F9F;
     text-transform: capitalize;
-}
-
-main section {
-    // @include grid-column(1 of 2);
 }
 
 main {
@@ -114,26 +88,26 @@ article {
         }
     }
     .menu {
-    	@include grid-column(1 of 6);
-    	@include grid-push(3 of 6);
-    	height: 100%;
-    	line-height: 40px;
+        @include grid-column(1 of 6);
+        @include grid-push(3 of 6);
+        height: 100%;
+        line-height: 40px;
     }
 
     .hero-content {
         display: none;
     }
     .hero-title {
-    	font-size: 30px;
-    	float: right;
-    	width: 250px;
-    	height: 100px;
+        font-size: 30px;
+        float: right;
+        width: 250px;
+        height: 100px;
     }
     .featured-work article {
         @include grid-column(1 of 1);
     }
     .main-content img {
-    	margin-top: 10px;
+        margin-top: 10px;
     }
     .content-container {
         margin-top: 10px;

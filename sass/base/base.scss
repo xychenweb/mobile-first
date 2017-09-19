@@ -2,117 +2,147 @@
 @import "../../neat/_neat";
 
 * {
-	margin: 0;
-	padding: 0;
-	outline: none;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html, body, .page-container {
+	height: 100%;
+}
+
+img {
+	max-width: 100%;
 }
 
 body {
-	font-family: sans-serif;
-	background-color: $page-background-color;
+    font-family: sans-serif;
+    background-color: $page-background-color;
 }
 
 main {
-	max-width: 1024px;
-	margin-left: auto;
-	margin-right: auto;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 header {
-	background-color: #000;
-	opacity: 0.75;
-	height: $header-height;
+    background-color: #000;
+    opacity: 0.75;
+    height: $header-height;
 }
 
-.menu-button .touch-button,.twit-container,.branding, hr, section.featured-work article:last-child {
-	display: none;
+.menu-button .touch-button,
+.twit-container,
+.branding,
+hr,
+section.featured-work article:last-child {
+    display: none;
 }
+
 //Need to implement the logic that when the number of article is odd number, hide the last one to make the number of article even. So it woundn't be waste of white space on mobile.
-
 .logo-container {
-	line-height: $header-height;
-	height: 100%;
-	margin-left: 20px;
-	img {
-		vertical-align: middle;
-		max-width: 100px;
-	}
+    line-height: $header-height;
+    height: 100%;
+    margin-left: 20px;
+    img {
+        vertical-align: middle;
+        max-width: 100px;
+    }
 }
+
 .menu {
-	line-height: $header-height;
-	img {
-		vertical-align: middle;
-	}
+    line-height: $header-height;
+    img {
+        vertical-align: middle;
+    }
 }
+
 hr {
-	max-width: 940px; // measured
+    max-width: 940px; // measured
 }
+
 .main-content {
-	@include grid-container;
+    @include grid-container;
 }
+
 main hr {
-	border-top: 1px $diviver-color solid;
+    border-top: 1px $diviver-color solid;
 }
 
 main h2 {
-	display: inline-block;
-	font-size: 1em;
+    display: inline-block;
+    font-size: 1em;
 }
+
 .sub-title {
-	font-size: 0.7em;
+    font-size: 0.7em;
 }
 
 section {
-	&.featured-work, &.wire {
-		.sub-title {
-			display: inline-block;
-			vertical-align: text-bottom;
-		}
-	}
+    &.featured-work,
+    &.wire {
+        .sub-title {
+            display: inline-block;
+            vertical-align: text-bottom;
+        }
+    }
 }
-.featured-work hr, .wire hr {
-	margin-bottom: 10px;
-}
-.main-content {
-	img {
-		margin-bottom: 5px;
-	}
-}
-.content-container, .main-content {
-	span {
-		font-family: inherit;
-		font-weight: 400;
-	}
-}
-main 	.highlight {
-		font-size: 0.7em;
-	}
-.atcl-cotent {
-	font-size: 0.7em;
-	margin-bottom: 5px;
-}
-    .atcl-title {
-	 clear: left;
-	}
+
+.featured-work hr,
 .wire hr {
-	margin-left: 0;
+    margin-bottom: 10px;
 }
-/*----------------------------------divider--------------------------------*/
+
+.main-content {
+    img {
+        margin-bottom: 5px;
+    }
+}
+
+.content-container,
+.main-content {
+    span {
+        font-family: inherit;
+        font-weight: 400;
+    }
+}
+
+main .highlight {
+    font-size: 0.7em;
+}
+
+.atcl-cotent {
+    font-size: 0.7em;
+    margin-bottom: 5px;
+}
+
+.atcl-title {
+    clear: left;
+}
+
+.wire hr {
+    margin-left: 0;
+}
+
 .logo img {
-	max-width: 100%;
-	max-height: 100%;
-	display: block;
-	margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 .menu img {
-	max-width: 100%;
-	max-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
+
 .twit-container img {
-	max-width: 100%;
-	max-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
+
 .hero-title {
     color: #D90E0A;
     font-weight: 700;
@@ -122,9 +152,14 @@ main 	.highlight {
     color: #9F9F9F;
     height: inherit;
 }
+
 .longer {
-	transform: scaleY(1.3);
+    transform: scaleY(1.3);
 }
+
 .highlight {
-	color: #E34E33;
+    color: #E34E33;
+}
+.branding .highlight {
+	font-size: inherit;
 }
