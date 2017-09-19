@@ -78,12 +78,6 @@ main {
 section.featured-work {
     @include grid-container;
     @include clearfix;
-
-    .sub-title {
-        // display: block;
-        margin-left: 5px;
-        margin-bottom: 5px;
-    }
 }
 
 section.wire {
@@ -140,5 +134,8 @@ article {
     }
     .main-content img {
     	margin-top: 10px;
+    }
+    .content-container {
+        margin-top: 10px;
     }
 }

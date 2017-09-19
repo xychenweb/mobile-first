@@ -44,7 +44,9 @@ header {
 		vertical-align: middle;
 	}
 }
-
+hr {
+	max-width: 940px; // measured
+}
 .main-content {
 	@include grid-container;
 }
@@ -59,9 +61,14 @@ main h2 {
 .sub-title {
 	font-size: 0.7em;
 }
-section.featured-work .sub-title {
-	display: inline-block;
-	vertical-align: text-bottom;
+
+section {
+	&.featured-work, &.wire {
+		.sub-title {
+			display: inline-block;
+			vertical-align: text-bottom;
+		}
+	}
 }
 .featured-work hr, .wire hr {
 	margin-bottom: 10px;
@@ -70,14 +77,16 @@ section.featured-work .sub-title {
 	img {
 		margin-bottom: 5px;
 	}
+}
+.content-container, .main-content {
 	span {
 		font-family: inherit;
 		font-weight: 400;
 	}
-	.highlight {
+}
+main 	.highlight {
 		font-size: 0.7em;
 	}
-}
 .atcl-cotent {
 	font-size: 0.7em;
 	margin-bottom: 5px;
@@ -85,6 +94,9 @@ section.featured-work .sub-title {
     .atcl-title {
 	 clear: left;
 	}
+.wire hr {
+	margin-left: 0;
+}
 /*----------------------------------divider--------------------------------*/
 .logo img {
 	max-width: 100%;
