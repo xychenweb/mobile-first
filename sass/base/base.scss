@@ -1,4 +1,5 @@
 @import "../variables";
+@import "../../neat/_neat";
 
 * {
 	margin: 0;
@@ -9,17 +10,25 @@
 
 body {
 	font-family: sans-serif;
+	background-color: $page-background-color;
 }
 
+main {
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
 header {
 	background-color: #000;
 	opacity: 0.75;
 	height: $header-height;
 }
 
-.menu-button .touch-button,.twit-container,.branding, hr {
+.menu-button .touch-button,.twit-container,.branding, hr, section.featured-work article:last-child {
 	display: none;
 }
+//Need to implement the logic that when the number of article is odd number, hide the last one to make the number of article even. So it woundn't be waste of white space on mobile.
+
 .logo-container {
 	line-height: $header-height;
 	height: 100%;
@@ -35,6 +44,47 @@ header {
 		vertical-align: middle;
 	}
 }
+
+.main-content {
+	@include grid-container;
+}
+main hr {
+	border-top: 1px $diviver-color solid;
+}
+
+main h2 {
+	display: inline-block;
+	font-size: 1em;
+}
+.sub-title {
+	font-size: 0.7em;
+}
+section.featured-work .sub-title {
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+.featured-work hr, .wire hr {
+	margin-bottom: 10px;
+}
+.main-content {
+	img {
+		margin-bottom: 5px;
+	}
+	span {
+		font-family: inherit;
+		font-weight: 400;
+	}
+	.highlight {
+		font-size: 0.7em;
+	}
+}
+.atcl-cotent {
+	font-size: 0.7em;
+	margin-bottom: 5px;
+}
+    .atcl-title {
+	 clear: left;
+	}
 /*----------------------------------divider--------------------------------*/
 .logo img {
 	max-width: 100%;

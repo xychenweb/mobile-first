@@ -16,4 +16,10 @@
             max-width: 40px;
         }
     }
+    .featured-work article {
+        @include grid-column(1 of 2);
+    }
+    .main-content img {
+    	margin-top: 10px;
+    }
 }

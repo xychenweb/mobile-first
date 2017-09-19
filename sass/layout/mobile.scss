@@ -78,16 +78,10 @@ main {
 section.featured-work {
     @include grid-container;
     @include clearfix;
-    article {
-        @include grid-column(1 of 2);
-    }
-    article:last-child {
-        display: none;
-    }
 
     .sub-title {
-        display: block;
-        margin-left: 20px;
+        // display: block;
+        margin-left: 5px;
         margin-bottom: 5px;
     }
 }
@@ -140,5 +134,11 @@ article {
     	float: right;
     	width: 250px;
     	height: 100px;
+    }
+    .featured-work article {
+        @include grid-column(1 of 1);
+    }
+    .main-content img {
+    	margin-top: 10px;
     }
 }
