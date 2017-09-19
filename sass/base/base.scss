@@ -28,7 +28,7 @@ main {
 }
 
 header {
-    background-color: #000;
+    background-color: $header-background-color;
     opacity: 0.75;
     height: $header-height;
 }
@@ -143,22 +143,12 @@ main .highlight {
     max-height: 100%;
 }
 
-.hero-title {
-    color: #D90E0A;
-    font-weight: 700;
-}
-
-.hero-content {
-    color: #9F9F9F;
-    height: inherit;
-}
-
 .longer {
     transform: scaleY(1.3);
 }
 
 .highlight {
-    color: #E34E33;
+    color: $theme-highlight;
 }
 .branding .highlight {
 	font-size: inherit;

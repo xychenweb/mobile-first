@@ -1,7 +1,7 @@
 @import "../variables";
 
 .atcl-title {
-    color: #fff;
+    color: $article-title;
     text-transform: capitalize;
     font-family: serif;
     font-size: 14px;
@@ -9,7 +9,7 @@
 }
 
 .atcl-alt-title {
-    color: #5EC1C2;
+    color: $module-alt-heading;
     text-transform: capitalize;
     font-family: serif;
     font-size: 14px;
@@ -17,11 +17,11 @@
 }
 
 .atcl-cotent {
-    color: #9F9F9F;
+    color: $content-heading;
 }
 
 .highlight {
-    color: #E34E33;
+    color: $content-highlight;
 }
 
 .menu a {
